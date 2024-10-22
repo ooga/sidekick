@@ -71,7 +71,7 @@ It assumes that your VPS is already configured and that your application is read
 			ActiveIndex: 0,
 			Quitting:    false,
 			AllDone:     false,
-		})
+		}, tea.WithInput(nil))
 
 		appConfig, loadError := utils.LoadAppConfig()
 		if loadError != nil {
